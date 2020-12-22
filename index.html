@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  </head>
+  
+  <body>
+    <a-scene>
+        <a-box color="pink" rotation="0 60 40" position="3 2 -6" scale="2 1.5 2"
+          animation="property: object3D.position.y; to: 3; dir: alternate; dur: 1000; loop: true"></a-box>
+
+        <a-box src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d35728b3-39bc-4616-9778-7461af165e18/d4gogp1-c6ab3510-43eb-466c-a1ac-6890ddcf8c25.jpg/v1/fill/w_1024,h_768,q_75,strp/red_box_texture_by_alphasoupstock_d4gogp1-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03NjgiLCJwYXRoIjoiXC9mXC9kMzU3MjhiMy0zOWJjLTQ2MTYtOTc3OC03NDYxYWYxNjVlMThcL2Q0Z29ncDEtYzZhYjM1MTAtNDNlYi00NjZjLWExYWMtNjg5MGRkY2Y4YzI1LmpwZyIsIndpZHRoIjoiPD0xMDI0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.E-l3InI72lqumtHhTdqJE8WAlgvPfc80LJDbwFvErOQ" rotation="30 30 30" position="-4 3 -7" scale="3 3 4" 
+          animation="property: object3D.position.y; to: 4; dir: alternate; dur: 2500; loop: true">
+        </a-box>
+
+        <a-entity geometry="primitive: sphere; radius: 1.5" material="side: double; color:yellow" position="0 14 -8"
+        ></a-entity>
+
+        <a-box color="red" rotation="20 0 45" position="14 8 -10" scale="4 4 4"
+        animation="property: object3D.position.y; to: 4; dir: alternate; dur: 3000; loop: true">
+        </a-box>
+
+        <a-entity environment="preset: japan; dressingAmount: 8"></a-entity>
+    </a-scene>
+  </body>
+</html>
